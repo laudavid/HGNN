@@ -1,0 +1,112 @@
+Constructing hypergraph incidence matrix!
+(It may take several minutes! Please wait patiently!)
+Classification on NTU2012 dataset!!! class number: 67
+use MVCNN feature: False
+use GVCNN feature: True
+use MVCNN feature for structure: True
+use GVCNN feature for structure: True
+Configuration -> Start
+{'K_neigs': [10],
+ 'ckpt_folder': 'D:\\DeepLearning\\HGNN\\result\\ckpt',
+ 'data_root': 'D:\\DeepLearning\\HGNN\\datasets',
+ 'decay_rate': 0.7,
+ 'decay_step': 200,
+ 'drop_out': 0.5,
+ 'gamma': 0.9,
+ 'graph_type': 'hypergraph',
+ 'is_probH': False,
+ 'lr': 0.001,
+ 'm_prob': 1.0,
+ 'max_epoch': 600,
+ 'milestones': [100],
+ 'modelnet40_ft': 'D:\\DeepLearning\\HGNN\\datasets\\ModelNet40_mvcnn_gvcnn.mat',
+ 'n_hid': 128,
+ 'ntu2012_ft': 'D:\\DeepLearning\\HGNN\\datasets\\NTU2012_mvcnn_gvcnn.mat',
+ 'on_dataset': 'NTU2012',
+ 'print_freq': 50,
+ 'result_root': 'D:\\DeepLearning\\HGNN\\result',
+ 'result_sub_folder': 'D:\\DeepLearning\\HGNN\\result\\hypergraph_NTU2012',
+ 'use_gvcnn_feature': True,
+ 'use_gvcnn_feature_for_structure': True,
+ 'use_mvcnn_feature': False,
+ 'use_mvcnn_feature_for_structure': True,
+ 'weight_decay': 0.0005}
+Configuration -> End
+----------
+Epoch 0/599
+E:\Anaconda3\lib\site-packages\torch\optim\lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do
+this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+train Loss: 5.3573 Acc: 0.0098
+val Loss: 22.3127 Acc: 0.0295
+Best val Acc: 0.029491
+--------------------
+----------
+Epoch 50/599
+train Loss: 0.7662 Acc: 0.8883
+val Loss: 5.5459 Acc: 0.7828
+Best val Acc: 0.788204
+--------------------
+----------
+Epoch 100/599
+train Loss: 0.4045 Acc: 0.9329
+val Loss: 4.6105 Acc: 0.8150
+Best val Acc: 0.831099
+--------------------
+----------
+Epoch 150/599
+train Loss: 0.3100 Acc: 0.9481
+val Loss: 4.7151 Acc: 0.8150
+Best val Acc: 0.833780
+--------------------
+----------
+Epoch 200/599
+train Loss: 0.2653 Acc: 0.9524
+val Loss: 4.7564 Acc: 0.8284
+Best val Acc: 0.833780
+--------------------
+----------
+Epoch 250/599
+train Loss: 0.2282 Acc: 0.9561
+val Loss: 4.7417 Acc: 0.8284
+Best val Acc: 0.833780
+--------------------
+----------
+Epoch 300/599
+train Loss: 0.2188 Acc: 0.9524
+val Loss: 4.8616 Acc: 0.8177
+Best val Acc: 0.833780
+--------------------
+----------
+Epoch 350/599
+train Loss: 0.1948 Acc: 0.9610
+val Loss: 4.9200 Acc: 0.8097
+Best val Acc: 0.836461
+--------------------
+----------
+Epoch 400/599
+train Loss: 0.1801 Acc: 0.9671
+val Loss: 5.0114 Acc: 0.8177
+Best val Acc: 0.841823
+--------------------
+----------
+Epoch 450/599
+train Loss: 0.1691 Acc: 0.9677
+val Loss: 4.8772 Acc: 0.8365
+Best val Acc: 0.841823
+--------------------
+----------
+Epoch 500/599
+train Loss: 0.1600 Acc: 0.9756
+val Loss: 5.1994 Acc: 0.8123
+Best val Acc: 0.841823
+--------------------
+----------
+Epoch 550/599
+train Loss: 0.1518 Acc: 0.9707
+val Loss: 5.2159 Acc: 0.8204
+Best val Acc: 0.841823
+--------------------
+
+Training complete in 1m 34s
+Best val Acc: 0.841823
